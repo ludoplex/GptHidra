@@ -28,9 +28,14 @@ def explainFunction(c_code):
     data = {"prompt": "Explain this code:\n" + c_code, "max_tokens": 2048, "model": "text-davinci-003"}
     data = json.dumps(data)
 
-    req = urllib2.Request(url, data,
-                          {'Authorization': 'Bearer ' + API_KEY,
-                           'Content-Type': 'application/json'})
+    req = urllib2.Request(
+        url,
+        data,
+        {
+            'Authorization': f'Bearer {API_KEY}',
+            'Content-Type': 'application/json',
+        },
+    )
     response = json.loads(urllib2.urlopen(req).read())
 
     if "error" in response:
@@ -68,7 +73,7 @@ def getCurrentDecompiledFunction():
     try:
         return decompiler.decompileFunction(function, 30, monitor).getDecompiledFunction().getC()
     except Exception as e:
-        raise ValueError("Unable to decompile function: " + str(e))
+        raise ValueError(f"Unable to decompile function: {str(e)}")
 
 try:
     c_code = getCurrentDecompiledFunction()
