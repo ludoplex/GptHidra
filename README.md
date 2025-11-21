@@ -4,6 +4,12 @@ GptHidra is a Ghidra plugin that uses the [OpenAI Chat GPT](https://chat.openai.
 
 ![example.gif](images/example.gif)
 
+## What's New
+
+**GPT-4 Integration**: Benefit from the latest advancements in natural language processing, providing even more insightful and accurate code explanations.
+
+[Learn more about accessing to GPT-4](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4).
+
 ## Requirements
 
 - Ghidra `>= 10.1.5` (https://ghidra-sre.org).
@@ -12,7 +18,7 @@ GptHidra is a Ghidra plugin that uses the [OpenAI Chat GPT](https://chat.openai.
 ## Installation
 
 1. Download the GptHidra script [GptHidra.py](./GptHidra.py).
-2. Open the Ghidra Script Manager (found in the `Window` menu).
+2. Open the Ghidra Script Manager (found in the `Tools` menu).
 3. Click the `New` button to create a new script.
 4. Select `Python` as the language and give the script the name `GptHidra.py`.
 5. Paste the contents of the [GptHidra.py](./GptHidra.py) script into the editor window.
@@ -34,7 +40,7 @@ An explanation of the selected function will be printed to the Ghidra console.
 
 Telegram: [@evyatar9](https://t.me/evyatar9)
 
-Discord: [evyatar9#5800](https://discordapp.com/users/812805349815091251)
+Discord: [evyatar9](https://discord.com/users/812805349815091251)
 
 ## Contributing
 
@@ -46,6 +52,12 @@ If you would like to contribute to the GptHidra extension, feel free to submit a
 [https://ghidra.re/ghidra_docs/api/ghidra/app/decompiler/DecompInterface.html](https://ghidra.re/ghidra_docs/api/ghidra/app/decompiler/DecompInterface.html)
 
 [https://beta.openai.com/docs/](https://beta.openai.com/docs/)
+
+
+## Support
+You can support my work buying me a coffee:
+
+[<img width=250 alt="buymeacoffe" src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png">](https://www.buymeacoffee.com/evyatar9)
 
 
 ## Stargazers over time
